@@ -119,32 +119,78 @@ body main .cards .valores{
 
 body main .formulario{
     text-align: center;
+    background-color: rgb(204, 175, 137);
+    padding: 1%;
+}
+
+
+body main .formulario h1{
+    margin: 2%;
 }
 
 body main .formulario .info{
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 3%;
 }
 
 body main .formulario .info .nom{
     text-align: center;
     width: fit-content;
+    font-size: large;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: rgb(165, 142, 114);
+    border: solid 2px black;
 }
 
 body main .formulario .info .tel{
     text-align: center;
     width: fit-content;
+    font-size: large;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: rgb(165, 142, 114);
+    border: solid 2px black;
 }
 
 body main .formulario .info .apel{
     text-align: center;
     width: fit-content;
+    font-size: large;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: rgb(165, 142, 114);
+    border: solid 2px black;
 }
 
 body main .formulario .info .correo{
     text-align: center;
     width: fit-content;
+    font-size: large;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: rgb(165, 142, 114);
+    border: solid 2px black;
+}
+
+body main .formulario textarea{
+    padding: 0.5%;
+    border-radius: 10px;
+    background-color:rgb(165, 142, 114);
+    font-size: large;
+    border: solid 2px black;
+    
+}
+
+body main .formulario button{
+    background-color: rgb(131, 96, 54);
+    padding: 1% 2%;
+    border-radius: 10px;
+    font-size: large;
+    
 }
 
 
