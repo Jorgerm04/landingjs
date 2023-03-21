@@ -39,7 +39,7 @@ body header nav ul li a{
 }
 
 body main .intro{
-    background-color: rgb(165, 142, 114);
+    background-color: #c29a56;
     display: flex;
     justify-content: baseline;
     padding: 2em;
@@ -64,7 +64,7 @@ body main .intro .text p{
 body main .intro .text .boton-productos{
     padding: 1%;
     margin: 3% 2%;
-    background: rgb(108, 87, 61);
+    background: #7c5e28;
     width: fit-content;
     border-radius:10px;
     font-size: larger;
@@ -85,7 +85,7 @@ body main .cards{
 
 body main .cards .calidad{
     width: 32vw;
-    background-color: rgb(165, 142, 114);
+    background-color: #c29a56;
     padding: 1%;
     text-align: center;
     border-radius: 10px;
@@ -97,7 +97,7 @@ body main .cards .calidad{
 
 body main .cards .compromiso{
     width: 32vw;
-    background-color: rgb(165, 142, 114);
+    background-color: #c29a56;
     padding: 1%;
     text-align: center;
     border-radius: 10px;
@@ -108,7 +108,7 @@ body main .cards .compromiso{
 
 body main .cards .valores{
     width: 32vw;
-    background-color: rgb(165, 142, 114);
+    background-color: #c29a56;
     padding: 1%;
     text-align: center;
     border-radius: 10px;
@@ -119,7 +119,7 @@ body main .cards .valores{
 
 body main .formulario{
     text-align: center;
-    background-color: rgb(204, 175, 137);
+    background-color: #c29a56;
     padding: 1%;
 }
 
@@ -137,60 +137,85 @@ body main .formulario .info{
 }
 
 body main .formulario .info .nom{
-    text-align: center;
     width: fit-content;
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: rgb(165, 142, 114);
+    background-color: #d3b98d;
     border: solid 2px black;
 }
 
+
 body main .formulario .info .tel{
-    text-align: center;
     width: fit-content;
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: rgb(165, 142, 114);
+    background-color: #d3b98d;
     border: solid 2px black;
 }
 
 body main .formulario .info .apel{
-    text-align: center;
     width: fit-content;
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: rgb(165, 142, 114);
+    background-color: #d3b98d;
     border: solid 2px black;
 }
 
 body main .formulario .info .correo{
-    text-align: center;
     width: fit-content;
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: rgb(165, 142, 114);
+    background-color: #d3b98d;
     border: solid 2px black;
 }
 
 body main .formulario textarea{
     padding: 0.5%;
     border-radius: 10px;
-    background-color:rgb(165, 142, 114);
+    background-color:#d3b98d;
     font-size: large;
     border: solid 2px black;
-    
+    font-family: sans-serif;
 }
 
 body main .formulario button{
-    background-color: rgb(131, 96, 54);
+    margin: 1%;
+    background-color: #7c5e28;
     padding: 1% 2%;
     border-radius: 10px;
     font-size: large;
+}
+
+body footer .high-footer{
+    text-align: center;
+    display: flex;
+    padding: 2%;
     
+}
+
+body footer .high-footer ul li{
+    list-style: none;
+}
+
+body footer .high-footer .localizacion{
+    width: 34vw;
+}
+body footer .high-footer .contacto{
+    width: 34vw;
+}
+body footer .high-footer .redes{
+    width: 34vw;
+}
+
+body footer .low-footer{
+    background: #c29a56;
+    text-align: center;
+
+    padding: 2%;
 }
 
 
