@@ -39,7 +39,7 @@ body header nav ul li a{
 }
 
 body main .intro{
-    background-color: #c29a56;
+    background-color: #d3b98d;
     display: flex;
     justify-content: baseline;
     padding: 2em;
@@ -64,7 +64,7 @@ body main .intro .text p{
 body main .intro .text .boton-productos{
     padding: 1%;
     margin: 3% 2%;
-    background: #7c5e28;
+    background: #C29A56;
     width: fit-content;
     border-radius:10px;
     font-size: larger;
@@ -81,11 +81,12 @@ body main .cards{
     justify-content: space-around;
     padding: 3em 2em;
     gap: 1%;
+    background-color: #F6F0E3;
 }
 
 body main .cards .calidad{
     width: 32vw;
-    background-color: #c29a56;
+    background-color: #d3b98d;
     padding: 1%;
     text-align: center;
     border-radius: 10px;
@@ -97,7 +98,7 @@ body main .cards .calidad{
 
 body main .cards .compromiso{
     width: 32vw;
-    background-color: #c29a56;
+    background-color: #d3b98d;
     padding: 1%;
     text-align: center;
     border-radius: 10px;
@@ -108,7 +109,7 @@ body main .cards .compromiso{
 
 body main .cards .valores{
     width: 32vw;
-    background-color: #c29a56;
+    background-color: #d3b98d;
     padding: 1%;
     text-align: center;
     border-radius: 10px;
@@ -119,7 +120,7 @@ body main .cards .valores{
 
 body main .formulario{
     text-align: center;
-    background-color: #c29a56;
+    background-color: #d3b98d;
     padding: 1%;
 }
 
@@ -141,7 +142,7 @@ body main .formulario .info .nom{
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: #d3b98d;
+    background-color: #F6F0E3;
     border: solid 2px black;
 }
 
@@ -151,7 +152,7 @@ body main .formulario .info .tel{
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: #d3b98d;
+    background-color: #F6F0E3;
     border: solid 2px black;
 }
 
@@ -160,7 +161,7 @@ body main .formulario .info .apel{
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: #d3b98d;
+    background-color: #F6F0E3;
     border: solid 2px black;
 }
 
@@ -169,14 +170,14 @@ body main .formulario .info .correo{
     font-size: large;
     padding: 1%;
     border-radius: 8px;
-    background-color: #d3b98d;
+    background-color: #F6F0E3;
     border: solid 2px black;
 }
 
 body main .formulario textarea{
     padding: 0.5%;
     border-radius: 10px;
-    background-color:#d3b98d;
+    background-color:#F6F0E3;
     font-size: large;
     border: solid 2px black;
     font-family: sans-serif;
@@ -184,7 +185,7 @@ body main .formulario textarea{
 
 body main .formulario button{
     margin: 1%;
-    background-color: #7c5e28;
+    background-color: #C29A56;
     padding: 1% 2%;
     border-radius: 10px;
     font-size: large;
@@ -194,6 +195,7 @@ body footer .high-footer{
     text-align: center;
     display: flex;
     padding: 2%;
+    background-color: #F6F0E3;
     
 }
 
@@ -212,7 +214,7 @@ body footer .high-footer .redes{
 }
 
 body footer .low-footer{
-    background: #c29a56;
+    background: #C29A56;
     text-align: center;
 
     padding: 2%;
