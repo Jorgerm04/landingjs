@@ -1,41 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-body{
-    font-size: large;
+    box-sizing: border-box;
     font-family: sans-serif;
-
 }
 
-body header{
-    margin: 1%;
-}
-
-body header img{
-    width: 15%;
+header {
     display: flex;
-    justify-content: flex-start;
-}
-body header nav{
-    display: flex;
-    justify-content: flex-end;
-}
-
-body header nav ul{
-    display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 2rem;
 }
 
-body header nav ul li{
-    list-style: none;
-    margin-right: 25px;
-    font-size:x-large;
+.logo {
+    max-width: 5rem;
 }
 
-body header nav ul li a{
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
     text-decoration: none;
-    color: black;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
 }
 
 body main .intro{
@@ -191,6 +234,10 @@ body main .formulario button{
     font-size: large;
 }
 
+body footer{
+    align-self: flex-end;
+}
+
 body footer .high-footer{
     text-align: center;
     display: flex;
@@ -218,6 +265,53 @@ body footer .low-footer{
     text-align: center;
 
     padding: 2%;
+}
+
+body main .grid-products{
+    text-align: center;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 10%;
+}
+
+main h2{
+margin: 2% 4%;
+}
+
+body main .descuentos{
+    text-align: center;
+    background-color: #C29A56;
+    color: white;
+    padding: 1%;
+}
+body main .grid-products .product {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(178, 178, 178);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+body main .grid-products .product i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3%;
+}
+
+body main .grid-products .product .nombre{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 3%;
+}
+
+body main .grid-products .product .precio{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 3%;
 }
 
 
