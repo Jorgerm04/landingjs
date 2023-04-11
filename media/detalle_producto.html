@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo" src="Imagenes/WEB-Imagotipo-trenzatress-ocre.jpg" alt="Logo"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="img-producto">
+        <img src="Imagenes/Cordon_riel.jpg" alt="Imagen producto">
+    </div>
+    <div class="grid-derecha">
+        <h3>Cordón para rieles extensible</h3>
+        <div class="precio">11.99€</div>
+        <div class="descripcion">
+            El cordon para riel extensible es un accesorio de alta calidad diseñado para completar cualquier sistema
+            de rieles extensible. Este cordon está fabricado con materiales resistentes y duraderos que garantizan
+            una larga vida útil. El cordon para riel extensible está disponible en diferentes longitudes y
+            materiales para adaptarse a sus necesidades específicas.
+        </div>
+        <div class="longitud">
+            <p>Longitud</p> 
+            <select name="longitud" id="longitud">
+                <option value="">200 m</option>
+                <option value="">500 m</option>
+            </select>
+        </div>
+
+        <div class="diametro">
+            <p>Diametro</p>
+            <select name="diametro" id="diametro">
+                <option value="">2,7 mm</option>
+                <option value="">2,8 mm</option>
+                <option value="">2,9 mm</option>
+                <option value="">3,0 mm</option>
+                <option value="">3,1 mm</option>
+                <option value="">3,2 mm</option>
+                <option value="">3,3 mm</option>
+                <option value="">3,4 mm</option>
+                <option value="">3,5 mm</option>
+            </select>
+        </div>
+
+        <div class="material">
+            <p>Material</p>
+            <select name="material" id="material">
+                <option value="">Polipropileno</option>
+                <option value="">Poliester</option>
+                <option value="">Nylon</option>
+            </select>
+        </div>
+
+        <div class="compra">
+            <div class="carrito">
+                <i class="bi bi-cart4"></i>
+            </div>
+            <div class="añadir">
+                Añadir al carrito
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
