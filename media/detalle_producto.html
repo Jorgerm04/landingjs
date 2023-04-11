@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_detalle_producto.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- libreria que vamos a utililzar para los alerts es Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/main.js"></script>
     <title>Document</title>
 </head>
 
@@ -24,59 +27,73 @@
             </ul>
         </nav>
     </header>
-    <div class="img-producto">
-        <img src="Imagenes/Cordon_riel.jpg" alt="Imagen producto">
-    </div>
-    <div class="grid-derecha">
-        <h3>Cordón para rieles extensible</h3>
-        <div class="precio">11.99€</div>
-        <div class="descripcion">
-            El cordon para riel extensible es un accesorio de alta calidad diseñado para completar cualquier sistema
-            de rieles extensible. Este cordon está fabricado con materiales resistentes y duraderos que garantizan
-            una larga vida útil. El cordon para riel extensible está disponible en diferentes longitudes y
-            materiales para adaptarse a sus necesidades específicas.
+    <main>
+        <div class="img-producto">
+            <img src="Imagenes/Cordon_riel.jpg" alt="Imagen Producto">
         </div>
-        <div class="longitud">
-            <p>Longitud</p> 
-            <select name="longitud" id="longitud">
-                <option value="">200 m</option>
-                <option value="">500 m</option>
-            </select>
-        </div>
+        <div class="grid-derecha">
+            <h3>Cordón para rieles extensible</h3>
+            <div class="precio" id="precio">11.99€</div>
 
-        <div class="diametro">
-            <p>Diametro</p>
-            <select name="diametro" id="diametro">
-                <option value="">2,7 mm</option>
-                <option value="">2,8 mm</option>
-                <option value="">2,9 mm</option>
-                <option value="">3,0 mm</option>
-                <option value="">3,1 mm</option>
-                <option value="">3,2 mm</option>
-                <option value="">3,3 mm</option>
-                <option value="">3,4 mm</option>
-                <option value="">3,5 mm</option>
-            </select>
-        </div>
-
-        <div class="material">
-            <p>Material</p>
-            <select name="material" id="material">
-                <option value="">Polipropileno</option>
-                <option value="">Poliester</option>
-                <option value="">Nylon</option>
-            </select>
-        </div>
-
-        <div class="compra">
-            <div class="carrito">
-                <i class="bi bi-cart4"></i>
+            <div class="descripcion">
+                El cordon para riel extensible es un accesorio de alta calidad diseñado para completar cualquier sistema
+                de rieles extensible. Este cordon está fabricado con materiales resistentes y duraderos que garantizan
+                una larga vida útil. El cordon para riel extensible está disponible en diferentes longitudes y
+                materiales para adaptarse a sus necesidades específicas.
             </div>
-            <div class="añadir">
-                Añadir al carrito
+
+            <div class="desplegables">
+                <div class="longitud">
+                    <p>Longitud</p>
+                    <select  id="desplegable-longitud">
+                        <option value="0">200 m</option>
+                        <option value="1">500 m</option>
+                    </select>
+                </div>
+
+                <div class="diametro">
+                    <p>Diametro</p>
+                    <select id="desplegable-diametro">
+                        <option value="0">2,7 mm</option>
+                        <option value="1">2,8 mm</option>
+                        <option value="2">2,9 mm</option>
+                        <option value="3">3,0 mm</option>
+                        <option value="4">3,1 mm</option>
+                        <option value="5">3,2 mm</option>
+                        <option value="6">3,3 mm</option>
+                        <option value="7">3,4 mm</option>
+                        <option value="8">3,5 mm</option>
+                    </select>
+                </div>
+
+                <div class="material">
+                    <p>Material</p>
+                    <select id="desplegable-material">
+                        <option value="0">Polipropileno</option>
+                        <option value="1">Poliester</option>
+                        <option value="2">Nylon</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="compra">
+                <div class="carrito">
+                    <i class="bi bi-cart"></i>
+                </div>
+                <div class="añadir">
+                    Añadir al carrito
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="low-footer">
+            TrenzaTress, S.L
+        </div>
+
+    </footer>
 </body>
 
 </html>
