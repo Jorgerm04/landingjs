@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+
+
+
+
+main h2{
+margin: 2% 4%;
+}
+
+body main .descuentos{
+    text-align: center;
+    background-color: #C29A56;
+    color: white;
+    padding: 1%;
+}
+
+body main .grid-products{
+    text-align: center;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 10%;
+}
+
+body main .grid-products a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: inherit;
+  }
+
+body main .grid-products a .product {
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(178, 178, 178);
+    padding: 10px;
+    position: relative;
+    background-image:url(../media/Imagenes/Cordon_riel.jpg);
+    background-size:contain;
+    background-position: center;
+}
+body main .grid-products a .product i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3%;
+    transition: 0.3s;
+}
+
+body main .grid-products a .product i:hover{
+    color:#ececec;
+}
+
+body main .grid-products a .product .nombre{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 3%;
+}
+
+body main .grid-products a .product .precio{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 3%;
+}
+
+body footer{
+    width: 100%;
+}
+body footer div{
+    background: #C29A56;
+    text-align: center;
+
+    padding: 2%;
+}
+

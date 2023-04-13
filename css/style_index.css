@@ -267,52 +267,6 @@ body footer .low-footer{
     padding: 2%;
 }
 
-body main .grid-products{
-    text-align: center;
-    margin: 3%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 10%;
-}
-
-main h2{
-margin: 2% 4%;
-}
-
-body main .descuentos{
-    text-align: center;
-    background-color: #C29A56;
-    color: white;
-    padding: 1%;
-}
-body main .grid-products .product {
-    width: 400px;
-    height: 400px;
-    background-color: rgb(178, 178, 178);
-    padding: 10px;
-    display: inline-block;
-    position: relative;
-}
-body main .grid-products .product i{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 3%;
-}
-
-body main .grid-products .product .nombre{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 3%;
-}
-
-body main .grid-products .product .precio{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 3%;
-}
 
 
 

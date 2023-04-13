@@ -97,6 +97,7 @@ body main .img-producto img{
     width: 90%;
     height: 80%;
     border-radius: 8px;
+    box-shadow: 5px 6px 6px #94949E;
 }
 
 body main .grid-derecha{
@@ -114,11 +115,13 @@ body main .grid-derecha .precio{
     padding: 1%;
     border-radius: 8px;
     margin: 1% 0;
+    box-shadow: 4px 5px 5px #675b46;
 }
 
 body main .grid-derecha .descripcion{
     font-size: larger;
     margin: 2% 0;
+    padding: 2% 0;
 }
 
 body main .grid-derecha .desplegables{
@@ -130,7 +133,10 @@ body main .grid-derecha .desplegables{
 body main .grid-derecha .desplegables .longitud{
    width: 32%;
    font-size: larger;
+   
 }
+
+
 
 body main .grid-derecha .desplegables .longitud p{
     margin: 4% 0;
@@ -141,6 +147,13 @@ body main .grid-derecha .desplegables .longitud select{
     padding: 4%;
     border-radius: 8px;
     background-color: #d3b98d;
+    outline: none;
+    border: none;
+    box-shadow: 4px 5px 5px #87775b;
+}
+
+select{
+    cursor: pointer;
 }
 
 body main .grid-derecha .desplegables .diametro{
@@ -157,6 +170,9 @@ body main .grid-derecha .desplegables .diametro select{
     padding: 4%;
     border-radius: 8px;
     background-color: #d3b98d;
+    outline: none;
+    border: none;
+    box-shadow: 4px 5px 5px #87775b;
 }
 
 body main .grid-derecha .desplegables .material{
@@ -173,6 +189,9 @@ body main .grid-derecha .desplegables .material select{
     padding: 4%;
     border-radius: 8px;
     background-color: #d3b98d;
+    outline: none;
+    border: none;
+    box-shadow: 4px 5px 5px #87775b;
 }
 
 body main .grid-derecha .compra{
@@ -180,30 +199,80 @@ body main .grid-derecha .compra{
     justify-content: center;
     text-align: center;
     margin: 6% 0;
+    padding: 2% 0;
 }
 
-body main .grid-derecha .compra .carrito{
+body main .grid-derecha .compra .añadir-carrito{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 6% 0;
+    padding: 2% 0;
+    width: 50%;
+}
+
+body main .grid-derecha .compra .añadir-carrito .carrito-icon{
     width: 50% fit-content;
-    background-color:#d3b98d;
+    background-color:#c39444;
     font-size: larger;
     padding: 2%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     margin-right: 0.2%;
-    
+    transition: 0.5s;
+    box-shadow: 4px 5px 5px #7b5e2b;
+    cursor: pointer;
 }
 
-body main .grid-derecha .compra .añadir{
+
+body main .grid-derecha .compra .añadir-carrito .texto{
     width: 50% fit-content;
-    background-color: #d3b98d;
+    background-color: #c39444;
     font-size: larger;
     padding: 2%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    margin-left: 0.2%;
+    margin-left: 0.1%;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 4px 5px 5px #7b5e2b;
+}
+
+body main .grid-derecha .compra .comprar-ya{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 6% 0;
+    padding: 2% 0;
+    width: 50%;
+}
+
+body main .grid-derecha .compra .comprar-ya .carrito-icon{
+    width: 50% fit-content;
+    background-color:#be8136;
+    font-size: larger;
+    padding: 2%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-right: 0.2%;
+    transition: 0.5s;
+    box-shadow: 4px 5px 5px #734f22;
+    cursor: pointer;
 }
 
 
+body main .grid-derecha .compra .comprar-ya .texto{
+    width: 50% fit-content;
+    background-color: #be8136;
+    font-size: larger;
+    padding: 2%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 0.1%;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 4px 5px 5px #734f22;
+}
 
 body footer .low-footer{
     background: #C29A56;

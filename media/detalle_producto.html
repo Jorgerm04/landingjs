@@ -10,6 +10,7 @@
     <!-- libreria que vamos a utililzar para los alerts es Sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/detalle_producto.js" defer></script>
+    <script src="../js/main.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -76,15 +77,25 @@
                 </div>
             </div>
 
-
             <div class="compra">
-                <div class="carrito">
-                    <i class="bi bi-cart"></i>
+                <div class="añadir-carrito">
+                    <div id="añadir-carrito-carrito" class="carrito-icon">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div id="añadir-carrito-texto" class="texto">
+                        Añadir al carrito
+                    </div>
                 </div>
-                <div class="añadir">
-                    Añadir al carrito
+                <div class="comprar-ya">
+                    <div id="comprar-ya-carrito" class="carrito-icon">
+                        <i class="bi bi-cart-check"></i>
+                    </div>
+                    <div id="comprar-ya-texto" class="texto">
+                        Comprar ya
+                    </div>
                 </div>
             </div>
+            
         </div>
     </main>
 
