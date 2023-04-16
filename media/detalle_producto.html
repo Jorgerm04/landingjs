@@ -34,7 +34,7 @@
         </div>
         <div class="grid-derecha">
             <h3>Cordón para rieles extensible</h3>
-            <div class="precio" id="precio-producto">11.99€</div>
+            <div class="precio" id="precio-producto">10.00€</div>
 
             <div class="descripcion">
                 El cordon para riel extensible es un accesorio de alta calidad diseñado para completar cualquier sistema
@@ -47,6 +47,7 @@
                 <div class="longitud">
                     <p>Longitud</p>
                     <select  id="desplegable-longitud" onchange="actualizarPrecio()">
+                        
                         <option value="200">200 m</option>
                         <option value="500">500 m</option>
                     </select>
@@ -55,6 +56,7 @@
                 <div class="diametro">
                     <p>Diametro</p>
                     <select id="desplegable-diametro" onchange="actualizarPrecio()">
+                        
                         <option value="2,7">2,7 mm</option>
                         <option value="2,8">2,8 mm</option>
                         <option value="2,9">2,9 mm</option>
@@ -69,7 +71,9 @@
 
                 <div class="material">
                     <p>Material</p>
+                    <!--Llamamos al metodo de actualizarprecio que nos permitira cambiar el precio dependiendo que caracteristicas utilizemos -->
                     <select id="desplegable-material" onchange="actualizarPrecio()">
+                        
                         <option value="polipropileno">polipropileno</option>
                         <option value="poliester">poliester</option>
                         <option value="nylon">nylon</option>
