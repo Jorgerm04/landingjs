@@ -25,13 +25,19 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
+                <li><a heref="#"><i class="bi bi-cart"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- Zona izquierda en la que se encuentra la imagen del producto -->
-        <div class="img-producto">
+        <div class="grid-izquierda">
             <img src="Imagenes/riel_polipropileno_1.jpg" alt="Imagen Producto">
+            <div class="fotos">
+                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_1.jpg">
+                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_2.jpg">
+                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_3.jpg">
+            </div>
         </div>
            <!-- Grid de la derecha en el que se encuentra toda la informacion del producto junto con las opciones de compra -->
         <div class="grid-derecha">
@@ -84,6 +90,11 @@
             </div>
 
             <div class="compra">
+                <div class="cantidad">
+                    <button class="menos" >-</button>
+                    <input class="numero" type="number" id="cantidad" value="1" min="1" max="500">
+                    <button class="mas">+</button>
+                </div>
                 <div class="añadir-carrito">
                     <div id="añadir-carrito-carrito" class="carrito-icon">
                         <i class="bi bi-cart-plus"></i>
@@ -106,7 +117,7 @@
     </main>
 
     <footer>
-        <div class="low-footer">
+        <div>
             TrenzaTress, S.L
         </div>
 
