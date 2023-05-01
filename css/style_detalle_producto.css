@@ -89,15 +89,30 @@ body main{
 
 }
 
-body main .img-producto{
+body main .grid-izquierda{
     width: 50vw;
+    text-align: center;
 }
 
-body main .img-producto img{
-    width: 90%;
-    height: 80%;
+body main .grid-izquierda img{
+    width: 500px;
+    height: 500px;
     border-radius: 8px;
     box-shadow: 5px 6px 6px #94949E;
+}
+
+body main .grid-izquierda .fotos{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 10%;
+}
+
+body main .grid-izquierda .fotos .imagen-pequena{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 5px 6px 6px #94949E;
+    object-fit: cover;
 }
 
 body main .grid-derecha{
@@ -202,13 +217,75 @@ body main .grid-derecha .compra{
     padding: 2% 0;
 }
 
+body main .grid-derecha .compra .cantidad{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    margin: 6% 0;
+    padding: 2% 0;
+}
+
+body main .grid-derecha .compra .cantidad .numero{
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: #D3B98D;
+    text-align: center;
+    font-size: medium;
+    box-shadow: 4px 5px 5px #87775b
+}
+
+/*Este codigo de ccs lo he tenido que usar para quitar los botones por defecto de incrementar y decrementar numero del input*/
+body main .grid-derecha .compra .cantidad .numero::-webkit-outer-spin-button,
+body main .grid-derecha .compra .cantidad .numero::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body main .grid-derecha .compra .cantidad .menos{
+    text-align: center;
+    justify-content: center;
+    margin-right: 3%;
+    font-size: x-large;
+    border: none;
+    background-color: #D3B98D;
+    border-radius: 8px;
+    padding: 3%;
+    box-shadow: 4px 5px 5px #87775b;
+    transition: 0.5s;
+}
+
+body main .grid-derecha .compra .cantidad .menos:hover{
+   background-color: #87775b;
+}
+
+body main .grid-derecha .compra .cantidad .mas{
+    text-align: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-size: x-large;
+    border: none;
+    background-color: #D3B98D;
+    border-radius: 8px;
+    padding: 2%;
+    box-shadow: 4px 5px 5px #87775b;
+    transition: 0.5s;
+}
+
+body main .grid-derecha .compra .cantidad .mas:hover{
+    background-color: #87775b;
+ }
+
 body main .grid-derecha .compra .añadir-carrito{
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 6% 0;
     padding: 2% 0;
-    width: 50%;
+    width: 40%;
 }
 
 body main .grid-derecha .compra .añadir-carrito .carrito-icon{
@@ -244,7 +321,7 @@ body main .grid-derecha .compra .comprar-ya{
     text-align: center;
     margin: 6% 0;
     padding: 2% 0;
-    width: 50%;
+    width: 40%;
 }
 
 body main .grid-derecha .compra .comprar-ya .carrito-icon{
@@ -274,10 +351,13 @@ body main .grid-derecha .compra .comprar-ya .texto{
     box-shadow: 4px 5px 5px #734f22;
 }
 
-body footer .low-footer{
+body footer{
+    width: 100%;
+}
+
+body footer div{
     background: #C29A56;
     text-align: center;
-
     padding: 2%;
 }
 
