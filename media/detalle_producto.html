@@ -32,11 +32,11 @@
     <main>
         <!-- Zona izquierda en la que se encuentra la imagen del producto -->
         <div class="grid-izquierda">
-            <img src="Imagenes/riel_polipropileno_1.jpg" alt="Imagen Producto">
+            <img src="Imagenes/riel_polipropileno_1.jpg" alt="Imagen Producto" id="img1">
             <div class="fotos">
-                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_1.jpg">
-                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_2.jpg">
-                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_3.jpg">
+                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_1.jpg" id="img2">
+                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_2.jpg" id="img3">
+                <img class="imagen-pequena" src="Imagenes/riel_polipropileno_3.jpg" id="img4">
             </div>
         </div>
            <!-- Grid de la derecha en el que se encuentra toda la informacion del producto junto con las opciones de compra -->
@@ -80,7 +80,7 @@
                 <div class="material">
                     <p>Material</p>
                     <!--Llamamos al metodo de actualizarprecio que nos permitira cambiar el precio dependiendo que caracteristicas utilizemos -->
-                    <select id="desplegable-material" onchange="actualizarPrecio()">
+                    <select id="desplegable-material" onchange="actualizarPrecio(); cambioImagenes();">
                         
                         <option value="polipropileno">polipropileno</option>
                         <option value="poliester">poliester</option>
