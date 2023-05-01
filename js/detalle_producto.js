@@ -90,30 +90,59 @@ function cambioImagenes() {
       var Imagen4 = document.getElementById("img4");
 
       switch (true) {
-            //detecta longitud diametro y material y en consecuencia le cambia el html al que pongamos en el .innerhtml
             case material === "polipropileno":
                   Imagen1.src = "../media/Imagenes/riel_polipropileno_1.jpg";
+
                   Imagen2.src = "../media/Imagenes/riel_polipropileno_1.jpg";
+                  Imagen2.style.boxShadow = '4px 5px 5px #997a45';
+                  Imagen2.style.border = 'solid 4px #C29A56';
+
                   Imagen3.src = "../media/Imagenes/riel_polipropileno_2.jpg";
+                  Imagen3.style.boxShadow = '4px 5px 5px #94949E'
+                  Imagen3.style.border = 'none'
+
                   Imagen4.src = "../media/Imagenes/riel_polipropileno_3.jpg";
+                  Imagen4.style.boxShadow = '4px 5px 5px #94949E'
+                  Imagen4.style.border = 'none'
                   break;
-            case  material === "poliester":
+            case material === "poliester":
                   Imagen1.src = "../media/Imagenes/riel_poliester_1.jpg";
+
                   Imagen2.src = "../media/Imagenes/riel_poliester_1.jpg";
+                  Imagen2.style.boxShadow = '4px 5px 5px #997a45';
+                  Imagen2.style.border = 'solid 4px #C29A56';
+
                   Imagen3.src = "../media/Imagenes/riel_poliester_2.png";
+                  Imagen3.style.boxShadow = '4px 5px 5px #94949E'
+                  Imagen3.style.border = 'none'
+
                   Imagen4.src = "../media/Imagenes/riel_poliester_3.png";
+                  Imagen4.style.boxShadow = '4px 5px 5px #94949E'
+                  Imagen4.style.border = 'none'
                   break;
             case material === "nylon":
                   Imagen1.src = "../media/Imagenes/riel_nylon_1.jpg";
+
                   Imagen2.src = "../media/Imagenes/riel_nylon_1.jpg";
+                  Imagen2.style.boxShadow = '4px 5px 5px #997a45';
+                  Imagen2.style.border = 'solid 4px #C29A56';
+
                   Imagen3.src = "../media/Imagenes/riel_nylon_2.jpg";
+                  Imagen3.style.boxShadow = '4px 5px 5px #94949E'
+                  Imagen3.style.border = 'none'
+
                   Imagen4.src = "../media/Imagenes/riel_nylon_3.png";
+                  Imagen4.style.boxShadow = '4px 5px 5px #94949E'
+                  Imagen4.style.border = 'none'
                   break;
       }
 
-  }
-  
-//Funcion para cambiar de imagen segun en que imagen pongamos el raton encima
+}
+
+/**
+ * Funciones para cambiar la imagen grande segun en que imagen pongamos el raton encima.
+ * Al poner el ratón en una de las fotos pequeñas aparecerá un borde y una sombra
+**/
 var Imagen1 = document.getElementById("img1");
 var Imagen2 = document.getElementById("img2");
 var Imagen3 = document.getElementById("img3");
@@ -122,12 +151,77 @@ var Imagen4 = document.getElementById("img4");
 
 Imagen2.addEventListener('mouseover', function () {
       Imagen1.src = Imagen2.src
+
+      Imagen2.style.boxShadow = '4px 5px 5px #997a45'
+      Imagen2.style.border = 'solid 4px #C29A56'
+
+      Imagen3.style.boxShadow = '4px 5px 5px #94949E'
+      Imagen3.style.border = 'none'
+
+      Imagen4.style.boxShadow = '4px 5px 5px #94949E'
+      Imagen4.style.border = 'none'
 });
 
 Imagen3.addEventListener('mouseover', function () {
       Imagen1.src = Imagen3.src
+
+      Imagen3.style.boxShadow = '4px 5px 5px #997a45'
+      Imagen3.style.border = 'solid 4px #C29A56'
+
+      Imagen2.style.boxShadow = '4px 5px 5px #94949E'
+      Imagen2.style.border = 'none'
+
+      Imagen4.style.boxShadow = '4px 5px 5px #94949E'
+      Imagen4.style.border = 'none'
 });
 
 Imagen4.addEventListener('mouseover', function () {
       Imagen1.src = Imagen4.src
+
+      Imagen4.style.boxShadow = '4px 5px 5px #997a45'
+      Imagen4.style.border = 'solid 4px #C29A56'
+
+      Imagen2.style.boxShadow = '4px 5px 5px #94949E'
+      Imagen2.style.border = 'none'
+
+      Imagen3.style.boxShadow = '4px 5px 5px #94949E'
+      Imagen3.style.border = 'none'
 });
+
+/*Funcion para que al darle click al botton "+" sume la cantidad*/
+function sumarCantidad() {
+      var cantidadInput = document.getElementById("cant");
+      var cantidad = cantidadInput.value;
+      if (cantidad < 500) {
+            cantidad++;
+            cantidadInput.value = cantidad;
+      }
+
+}
+
+/*Funcion para que al darle click al botton "-" reste la cantidad*/
+function restarCantidad() {
+      var cantidadInput = document.getElementById("cant");
+      var cantidad = cantidadInput.value;
+      if (cantidad > 1) {
+            cantidad--;
+            cantidadInput.value = cantidad;
+      }
+
+}
+
+
+function añadirCarrito() {
+      swal("¡Hecho!", "¡Añadido al carrito!", "success");
+
+}
+
+/*Funcion para sumar al número que hay al lado del icono de carrito de la barra de navegacion*/
+function sumarCarrito() {
+      var cantidadCarrito = document.getElementById("cant-carrito");
+      var cant = cantidadCarrito.value;
+      cant++;
+      cantidadCarrito.value = cant;
+}
+
+

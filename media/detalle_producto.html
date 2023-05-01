@@ -25,7 +25,8 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a heref="#"><i class="bi bi-cart"></i></a></li>
+                <li><a heref="#"><i class="bi bi-cart"><input class="cantidad-carrito" id="cant-carrito" type="number"
+                                readonly value="0"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +40,7 @@
                 <img class="imagen-pequena" src="Imagenes/riel_polipropileno_3.jpg" id="img4">
             </div>
         </div>
-           <!-- Grid de la derecha en el que se encuentra toda la informacion del producto junto con las opciones de compra -->
+        <!-- Grid de la derecha en el que se encuentra toda la informacion del producto junto con las opciones de compra -->
         <div class="grid-derecha">
             <h3>Cordón para rieles extensible</h3>
             <div class="precio" id="precio-producto">10.00€</div>
@@ -54,8 +55,8 @@
             <div class="desplegables">
                 <div class="longitud">
                     <p>Longitud</p>
-                    <select  id="desplegable-longitud" onchange="actualizarPrecio()">
-                        
+                    <select id="desplegable-longitud" onchange="actualizarPrecio()">
+
                         <option value="200">200 m</option>
                         <option value="500">500 m</option>
                     </select>
@@ -64,7 +65,7 @@
                 <div class="diametro">
                     <p>Diametro</p>
                     <select id="desplegable-diametro" onchange="actualizarPrecio()">
-                        
+
                         <option value="2,7">2,7 mm</option>
                         <option value="2,8">2,8 mm</option>
                         <option value="2,9">2,9 mm</option>
@@ -81,7 +82,7 @@
                     <p>Material</p>
                     <!--Llamamos al metodo de actualizarprecio que nos permitira cambiar el precio dependiendo que caracteristicas utilizemos -->
                     <select id="desplegable-material" onchange="actualizarPrecio(); cambioImagenes();">
-                        
+
                         <option value="polipropileno">polipropileno</option>
                         <option value="poliester">poliester</option>
                         <option value="nylon">nylon</option>
@@ -91,15 +92,15 @@
 
             <div class="compra">
                 <div class="cantidad">
-                    <button class="menos" >-</button>
-                    <input class="numero" type="number" id="cantidad" value="1" min="1" max="500">
-                    <button class="mas">+</button>
+                    <button class="menos" onclick="restarCantidad();">-</button>
+                    <input class="numero" type="number" id="cant" value="1" max="500" min="1">
+                    <button class="mas" onclick="sumarCantidad();">+</button>
                 </div>
                 <div class="añadir-carrito">
-                    <div id="añadir-carrito-carrito" class="carrito-icon">
+                    <div id="añadir-carrito-carrito" class="carrito-icon" onclick="añadirCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div id="añadir-carrito-texto" class="texto">
+                    <div id="añadir-carrito-texto" class="texto" onclick="añadirCarrito(); sumarCarrito();">
                         Añadir al carrito
                     </div>
                 </div>
@@ -112,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </main>
 

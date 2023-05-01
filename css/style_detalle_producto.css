@@ -27,6 +27,18 @@ header {
     color: #1c1c1c;
 }
 
+.nav-list li a .cantidad-carrito{
+    font-style: normal;
+    color: #b58128;
+    font-size: larger;
+    background-color:#ececec;
+    border-radius: 30%;
+    outline: none;
+    border: none;
+    width: 2vw;
+    padding-left: 10%;
+}
+
 .abrir-menu,
 .cerrar-menu {
     display: none;
@@ -113,6 +125,7 @@ body main .grid-izquierda .fotos .imagen-pequena{
     border-radius: 8px;
     box-shadow: 5px 6px 6px #94949E;
     object-fit: cover;
+    transition: 0.3s;
 }
 
 body main .grid-derecha{

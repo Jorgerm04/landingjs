@@ -14,6 +14,3 @@ function enviar(){
     swal("Bien hecho!", "Se ha enviado correctamente!", "success");
 
 }
-
-
-  
