@@ -113,3 +113,21 @@ function cambioImagenes() {
 
   }
   
+//Funcion para cambiar de imagen segun en que imagen pongamos el raton encima
+var Imagen1 = document.getElementById("img1");
+var Imagen2 = document.getElementById("img2");
+var Imagen3 = document.getElementById("img3");
+var Imagen4 = document.getElementById("img4");
+
+
+Imagen2.addEventListener('mouseover', function () {
+      Imagen1.src = Imagen2.src
+});
+
+Imagen3.addEventListener('mouseover', function () {
+      Imagen1.src = Imagen3.src
+});
+
+Imagen4.addEventListener('mouseover', function () {
+      Imagen1.src = Imagen4.src
+});
